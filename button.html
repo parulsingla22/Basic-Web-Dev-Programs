@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>button</title>
+<script type="text/javascript">
+alert("Hello");
+function con()
+{
+if(confirm('Are you sure'))
+alert("you press ok");
+else
+alert("you press cancel");
+}
+function sum()
+{
+var n1=parseInt(prompt("enter a no.1"));
+var n2=parseInt(prompt("enter a no.2"));
+var c=n1+n2;
+alert(c);
+}
+</script>
+
+</head>
+
+<body>
+<input type="button" value="alert" onclick="alert('i am alert');">
+
+<input type="button" value="confirm" onclick="alert('i am alert');">
+
+<input type="button" value="confirm another" onclick="con();">
+<input type="button" value="prompt boutton" onclick="sum();">
+</body>
+</html>

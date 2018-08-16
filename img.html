@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Image changing</title>
+</head>
+
+<script type="text/javascript">
+
+
+function change()
+{
+var z=document.getElementById("demo");
+if(z.style.display==="none")
+{
+z.style.display="block";
+}
+else
+{
+
+z.style.display="none";
+}}
+</script>
+<body>
+<h1 id='demo'>hjhi</h1>
+<img src="search.gif" id="img1" onmouseover="this.src='yellowstar.gif'" onmouseout="this.src='search.gif'"/>
+<input type="button" value="change"  onclick="change()">
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Application form</title>
+
+</head>
+<body bgcolor="blue" text="yellow">
+<form action=task3.html formmethod="get" id="myform">
+<table border="1">
+<tr >
+<td colspan="2"><h1>STUDENT REGISTERATION FORM</h1></td>
+</tr>
+<tr>
+<td>Favourite  Color</td>
+<td><input type="color" name="favcolor"></td>
+</tr>
+<tr>
+<td>First Name </td><td><input type="text" name="first" required placeholder="enter your name"/></td></tr>
+<tr>
+<td>Last Name </td><td><input type="text" name="last" disabled/></td></tr>
+<tr>
+<td>Email Id </td><td><input type="email" name="email" required/></td></tr>
+<tr>
+<tr>
+<td>Date Of Birth & Time</td><td><input type="datetime-local" name="birthdate"/></td>
+</tr>
+<td>Mobile Number</td><td><input type="tel" name="no"/>(10 digit no.)</td>
+</tr>
+<tr>
+<td>Select Gender</td>
+<td><input  type="radio" name="gender" value="Male" id="m"/><Label for="m">Male</label>
+<input  type="radio" name="gender" value="Female" id="f" /><label for="f">Female</label></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea cols="50" rows="5" name="address" ></textarea></td>
+</tr>
+<tr>
+<td>City </td><td><input ="text" name="city"/></td>
+</tr>
+<tr>
+<td>Pin Code</td><td><input ="text" name="pin"/></td>
+</tr>
+<tr>
+<td>State </td><td><input ="text" name="st"/></td></tr>
+<tr>
+<td>Country </td><td><input ="text" name="coun" value="india" readonly / ></td>
+</tr>
+<tr>
+
+<td>Hobbies</td>
+<td><input  type="checkbox" name="qualy" value="Drawing" id="dr"/><label for="dr">Drawing</label>
+<input  type="checkbox" name="qualy" value="Singing" id="sin"/><label for="sin">Singing</label>
+<input  type="checkbox" name="qualy" value="Dancing" id="dan"/><label for="dan">Dancing</label>
+<input  type="checkbox" name="qualy" value="Coding"id="co"/><label for="co">Coding</label><br>
+<input  type="checkbox" name="qualy" value="Others"id="oth"/><label for="oth">Others</label><input type="text" name="other"/></td>
+</tr>
+<tr>
+<td colspan="2">
+<table>
+
+<td>Qualification </td>
+<tr>
+<th>S No.</th>
+<th>Examination</th>
+<th>Board</th>
+<th>Percentage</th>
+</tr>
+<tr>
+<th>1</th>
+<th>Class X</th>
+<th><input type="text" name="x"/></th>
+<th><input type="text" name="x1"/></th>
+</tr>
+<tr>
+<th>2</th>
+<th>Class XII</th>
+<th><input type="text" name="df"/></th>
+<th><input type="text" name="df1"/></th>
+</tr>
+<tr>
+<th>3</th>
+<th>Graduation</th>
+<th><input type="text" name="gr"/></th>
+<th><input type="text" name="gr1"/></th>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>Courses Applied For</td><td><input  type="radio" name="course" value="B.C.A." />B.C.A.
+<input  type="radio" name="course" value="B.COM" />B.COM
+<input  type="radio" name="gender" value="B.Sc" />B.Sc</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" value="register"/>
+
+<input type="reset" value="clear"/></td>
+</tr>
+</table>
+</form>
+<input type="text" name="check" form="myform"/>
+</body>
+</html>

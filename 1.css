@@ -1,0 +1,25 @@
+h3
+{
+color:green;
+background-color:black;
+}
+p
+{
+color:yellow;
+
+background-color:blue;
+font-weight:bolder;
+font-style:italic;
+font-size:x-large;
+font-variant:small-caps;
+font-family:Lucida Fax;
+}
+body
+{
+background-color:yellow;
+background-image:url("../html/c.jpg");
+background-repeat:no-repeat;
+background-size:100%;
+background-position:center;
+background-attachment:fixed;
+}
