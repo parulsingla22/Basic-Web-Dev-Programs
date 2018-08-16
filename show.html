@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>fade</title>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+</script>
+<style type="text/css">
+.change{
+background-color:blue;
+color:yellow;
+display:none;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(":button").click(function(){
+             $("div").slideDown(2000,function(){
+		           $("div").fadeOut(2000);
+		     });
+        });
+	});
+</script>
+</head>
+<body>
+<div class="change">your product is added to cart</div>
+<input type="button" value="add">
+</body>
+</html>

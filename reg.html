@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Register Form</title>
+<style type="text/css">
+#blockprop
+{
+margin:1px;
+display:block;
+border:2px solid black;
+align:center;
+height:600px;
+width:50%;
+
+}
+div
+{
+
+background-color:pink;
+
+font-size:20px;
+margin:20px;
+}
+input[type="text"],input[type="submit"],select[name="country"]
+{
+height:30px;
+width:95%;
+margin:20px;
+}
+#subbut
+{
+background-color:skyblue;
+font-size:20px;
+font-style:bold;
+}
+#req
+{
+display:none;
+color:blue;
+}
+#req1
+{
+display:none;
+color:blue;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+     $(":submit").click(function(){
+	     var v=$("#valid").val();
+		 var v1=$("#valid1").val();
+		 if(v.length==0 && v1.length==0)
+		 {
+		 $("#valid").css("border","2px solid red");
+		 
+		 $("#valid1").css("border","2px solid red");
+		 $("#req").show();
+		 $("#req1").show();
+		 return false; 
+		 }
+		 else if(v.length==0)
+		 {
+		  
+		 $("#valid").css("border","2px solid red");
+		    $("#req").show();
+			return false;
+		 }
+		 else if(v1.length==0)
+		 {
+		  
+		 $("#valid1").css("border","2px solid red");
+		    $("#req1").show();
+			return false;
+		 }
+		 
+		 
+	 });
+});
+</script>
+</head>
+<body>
+<form action="thanku.html">
+<div id="blockprop">
+<div for="valid">First Name</div>
+<div><input id="valid" type="text" name="fname" placeholder="enter your first name"/>
+<span id="req">*Please fill its required</span></div>
+<div for="valid">Last Name</div>
+<div><input id="valid1" type="text" name="lname" placeholder="enter your last name"/><span id="req1">*Please fill its required</span></div>
+<div for="valid">Country</div>
+<div><select id="valid" name="country"  >
+<option value="none"></option>
+<option value="india" >INDIA</option>
+<option value="Canada" >CANADA</option>
+<option value="Australia" >AUSTRALIA</option>
+<option value="Gemany" >GERMANY</option>
+</select>
+</div>
+<div><input id="subbut" type="submit" value="Try It Yourself"></div>
+</div>
+</form>
+</body>
+</html>

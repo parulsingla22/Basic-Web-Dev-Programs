@@ -1,0 +1,115 @@
+<html>
+	<head>
+	<style>
+		.mydesign
+		{
+			background-color:rgb(168,219,49);
+			padding:40px;
+		}
+		.mydesign .textbox span
+		{
+			color:red;
+			display:none;
+		}
+		.mydesign .textbox input[type='text'],.textbox select
+		{
+			display:block;
+			width:100%;
+			height:50px;
+		}
+		.mydesign .common
+		{
+			line-height:30px;
+			margin:10px;
+		}
+		.mydesign .textbox label
+		{
+				color:white;
+		}
+		.mydesign .textbox input[type='submit']
+		{
+			display:block;
+			text-align:center;
+			width:100%;
+			height:50px;
+			background-color:rgb(113,194,73);
+			color:white;
+		}
+	</style>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+				$(":submit").click(function(){
+					var error=0;
+					if($("#fname").val().length==0)
+					{
+						$("#fname").css("border","1px solid red");
+						$("#efname").show();
+						error++;
+					}
+					else
+					{
+						$("#fname").css("border","none");
+						$("#efname").hide();
+					}
+					if($("#lname").val().length==0)
+					{
+						$("#lname").css("border","1px solid red");
+						$("#elname").show();
+						error++;
+					}
+					else
+					{
+						$("#lname").css("border","none");
+						$("#elname").hide();
+					}
+					
+					if($("#country").val().length==0)
+					{
+						$("#country").css("border","1px solid red");
+						$("#ecountry").show();
+						error++;
+					}
+					else
+					{
+						$("#country").css("border","none");
+						$("#ecountry").hide();
+					}
+					if(error!=0)	return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+	<div class="mydesign">
+		<form action="2.html">
+		<div class ="textbox">
+			<label for="fname" class="common">Enter Your name</label>
+			<input type="text" id="fname" name="fname" class="common"/>
+			<span id="efname" class="common">Please Enter Name</span>
+		</div>
+		
+		<div class ="textbox">
+			<label for="lname" class="common">Enter Last Name</label>
+			<input type="text" id="lname" name="lname" class="common"/>
+			<span id="elname" class="common">Please Enter Last Name</span>
+		</div>
+		
+		
+		<div class ="textbox">
+			<label for="country" class="common">Select a Country</label>
+			<select id="country" name="country" class="common">
+				<option value="">Please Select a Country</option>
+				<option value="India">India</option>
+			</select>
+			<span id="ecountry" class="common">Please Select a Country</span>
+		</div>
+		<div class="textbox">
+			<input type="submit" value="Click Me" class="common"/>
+		</div>
+		</form>
+	</div>
+	</body>
+</html>
